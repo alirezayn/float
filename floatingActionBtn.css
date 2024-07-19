@@ -1,0 +1,84 @@
+
+.floatingActionBtn{
+    width: auto;
+    height: auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+
+
+}
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 9999px;
+    color: whitesmoke;
+    background-color: #3996ee;
+    bottom: 10px;
+    left: 10px;
+    transition: all 500ms;
+}
+
+
+
+.mainContainer .formNumber {
+    opacity: 0;
+    width: 100%;
+    display: none;
+    transition: opacity 1s;
+}
+
+.formNumberShow {
+    display: flex;
+    margin-left: 15px;
+    animation: showFormNumber 1s forwards;
+}
+.inputNumber{
+    width: 180px;
+    height: 35px;
+    border: none;
+    text-align: right;
+    padding-right: 15px;
+    background-color: whitesmoke;
+    outline: none;
+    border-radius: 12px;
+}
+.check{
+    margin-left: 5px;
+    width: 50px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: whitesmoke;
+
+
+}
+
+@keyframes showFormNumber {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.mainContainerShow{
+    background-color: #bebebe;
+    width: 300px;
+}
+
+#showSupport {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: black;
+}
